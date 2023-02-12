@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Image Proccessing</title>
+    <script src="https://unpkg.com/konva@8.3.14/konva.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="../static/assets/images/icon.png" type="image/icon type">
+    <link rel="stylesheet"  href="../static/assets/css/style.css">
+  </head>
+  <body>
+    <div id="container"></div>
+
+    <div class="img1">
+      <input type="file" id="file_input1"  accept="image/jpeg, image/png, image/jpg" >
+    </div>
+
+    <div class="img2">
+      <input type="file" id="file_input2" accept="image/jpeg, image/png, image/jpg"> 
+    </div>
+
+    <div class="mag">
+      <input type="checkbox" id="mag_btn" >
+      <label for="mag_btn">Select Magnitude</label><br>
+    </div>
+
+    <div class="phase">
+      <input type="checkbox" id="phase_btn" >
+      <label for="phase_btn">Select Phase</label><br>
+    </div>
+
+    <div class="inverse">
+      <input type="checkbox" id="inverse" >
+      <label for="inverse"> Inverse Selection</label><br> 
+    </div>
+    
+    <div id="reconstruct">
+      <button style="top:120px; right:200px;" class="output" type="submit" onclick='Reconstruct()'> Output </button>
+    </div>
+    <script src="../static/assets/js/script.js"></script>
+  </body>
+</html>
